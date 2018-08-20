@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .cabecalho {
+            width: 1366px;
+            height: 56px;
+            margin: 0 auto;
+            background-color: #DA0100;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin-left: 34px;
+            line-height: 56px;
+        }
+
+        .menu ul li {
+            display: inline;
+            color: #fff;
+            font-family: 'Segoe UI';
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .menu ul li~li {
+            margin-left: 220px;
+        }
+
+        .banner img {
+            width: 838px;
+            height: 555.175px;
+            display: inline-block;
+        }
+
+        .pedido {
+            background-color: #FBF23E;
+            width: 531px;
+            height: 555px;
+            display: inline-block;
+        }
+
+        .topo {
+            width: 1366px;
+            height: 555px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .pedido {
+            text-align: center;
+
+        }
+
+        .pedido h2 {
+            font-family: Rockwell;
+            width: 268.096px;
+            height: 210.747px;
+            font-size: 60px;
+            color: #DA0100;
+            text-align: center;
+            margin: auto;
+            margin-top: 34px;
+        }
+
+        .pedido .localizacao {
+            width: 500px;
+            height: 50px;
+            margin-top: 31px;
+        }
+
+        .pedido p {
+            font-family: Rockwell;
+            font-weight: bold;
+            height: 35px;
+            font-size: 36px;
+            color: #DA0100;
+            display: inline-block;
+        }
+
+        .box-cep {
+            display: inline-block;
+            background: white;
+            width: 219px;
+            height: 63px;
+            line-height: 63px;
+            margin-left: 38.5px;
+        }
+
+        .pedido .box-cep span {
+            font-family: Rockwell;
+            font-size: 36px;
+            color: #606060;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        .pedido .consulte {
+            background-color: #DA0100;
+            width: 249px;
+            height: 84px;
+            line-height: 84px;
+            margin: 46.5px auto 0 auto;
+        }
+
+        .pedido .consulte span {
+            font-family: Rockwell;
+            font-size: 36px;
+            width: 201.568px;
+            height: 40.048px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .quebra {
+            background-color: #DA0100;
+            height: 19px;
+            width: 1366px;
+            margin: 0 auto;
+        }
+
+        .whatsapp .texto {
+            font-family: Rockwell;
+            font-size: 60px;
+            font-weight: bold;
+            color: #3C6B1A;
+            margin-top: 24px;
+            margin-left: 115px;
+            display: inline-block;
+            vertical-align: top;
+            transform: translateY(-10px);
+        }
+        
+        .whatsapp img {
+            width: 103px;
+            height: 97px;
+            display: inline-block;   
+            margin-left: 15px;    
+        }
+        
+        .promocoes h2 {
+            font-family: Rockwell;
+            width: 604.734px;
+            height: 56.781px;
+            font-size: 30pt;
+            color: #DA0100;
+            text-align: center;
+            margin: 34px 0px 0px 170px;
+        }
+        
+        .mid {
+            display: flex;
+            justify-content: space-between;
+            height: 2000px;
+        }
+
+        .mid .divisao {
+            width: 11px;
+            height: 1306px;
+            background-color: #3C6B1A;
+            margin-top: 34px; 
+            display: inline-block;
+        }
+
+        .mid .inf {
+            font-family: Rockwell;
+            font-size: 25pt;
+            font-weight: bold;
+            color: #3C6B1A;
+            margin-top: 100px;
+            height: 1306px;
+            border-left: solid 11px #3C6B1A;
+            padding-left: 100px;
+            margin-right: 170px; 
+        }
+
+        .promocoes .item1 h3 {
+            font-family: 'Segoe UI';
+            font-size: 30pt;
+            font-weight: bold;
+            color: #3C6B1A;
+            margin-left: 467px; 
+            margin-top: 31px;
+        }
+        
+        .camarao {
+            display: flex;
+        }
+        .promocoes .item1 img {
+            margin-left: 110px;
+        }
+
+        .promocoes .item1 ul {
+            margin-left: 65px;
+            margin-top: 55px;
+            font-family: Rockwell;
+            font-size: 25px;
+            font-weight: bold;
+            color: #3C6B1A;
+        }
+
+        .promocoes .camarao span {
+            font-family: Rockwell;
+            font-size: 25pt;
+            font-weight: bold;
+            color: #DA0100;
+            margin-left: 42px; 
+        }
+        
+        .calabresa {
+            display: flex;
+            transform: translateX(100px);
+        }
+
+         .promocoes .item2 img {
+            margin-right: 45px;
+        }
+
+        .promocoes .item2 ul {
+            margin-left: 65px;
+            margin-top: 55px;
+            font-family: Rockwell;
+            font-size: 25px;
+            font-weight: bold;
+            color: #3C6B1A;
+        }
+
+        .promocoes .calabresa span {
+            font-family: Rockwell;
+            font-size: 25pt;
+            font-weight: bold;
+            color: #DA0100;
+            margin-left: 42px; 
+        }
+
+         .manjericao {
+            display: flex;
+        }
+        .promocoes .item3 img {
+            margin-left: 110px;
+        }
+
+        .promocoes .item3 ul {
+            margin-left: 100px;
+            margin-top: 55px;
+            font-family: Rockwell;
+            font-size: 25px;
+            font-weight: bold;
+            color: #3C6B1A;
+        }
+
+        .promocoes .manjericao span {
+            font-family: Rockwell;
+            font-size: 25pt;
+            font-weight: bold;
+            color: #DA0100;
+            margin-left: 78px; 
+        }
+
+        .cala_bresa{
+            display: flex;
+        }
+        
+        .promocoes p {
+            margin: 40px 0px 0px 115px;
+            font-family: Rockwell;
+            font-size: 25px;
+            font-weight: bold;
+            color: #3C6B1A;
+        }
+
+        .inf img {
+            margin-top: 25px; 
+        }
+
+        .inf .pizzaiolo {
+            margin-top: 25px; 
+        }
+        
+        .promocoes .cardapio {
+            background-color: #DA0100;
+            width: 1366px;
+            height: 189px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul>
+                <li> PIZZARIA</li>
+                <li> CARDÁPIO</li>
+                <li> PROMOÇÕES</li>
+                <li> COMPRAS</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="topo">
+            <div class="banner">
+                <img src="Pizzaria Daniel/banner.png" alt="Pizza sobre uma mesa.">
+            </div>
+            <section class="pedido">
+                <h2>FAÇA PEDIDO ONLINE</h2>
+                <div class="localizacao">
+                    <p class="CEP">CEP:</p>
+                    <div class="box-cep">
+                        <span>00000-000</span>
+                    </div>
+                </div>
+                <div class="consulte">
+                    <span>CONSULTE</span>
+                </div>
+            </section>
+        </div>
+        <div class="quebra"></div>
+        <div class="whatsapp">
+            <div class="texto">
+                <span>PEÇA PELO WHATSAPP: (11) 97286-1722</span>
+            </div>
+            <img src="Pizzaria Daniel/motoca.png" alt="entregador de pizza na moto">
+        </div>
+        <div class="quebra"></div>
+        <div class="mid">
+        <section class="promocoes">
+            <h2>PROMOÇÕES ESPECIAIS</h2>
+            <div class="item1">
+                <h3>CAMARÃO</h3>
+                <div class="camarao">
+                <div><img src="Pizzaria Daniel/item1.png" alt="pizza1"></div>
+                <div>
+                    <ul class="ingredientes1">
+                    <li>Massa integral</li>
+                    <li>Folhas de agrião</li>
+                    <li>Molho de tomate</li>
+                    <li>Camarão</li>
+                    </ul>
+                    <br>
+                    <span>R$ 24,99</span>
+                </div>
+            </div>    
+            <div class="item2">
+                    <h3>CALABRESA</h3>
+                    <div class="calabresa">
+                        <div class="cala_bresa">
+                            <div>
+                                <ul class="ingredientes2">
+                                    <li>Massa integral</li>
+                                    <li>Folhas de agrião</li>
+                                    <li>Molho de tomate</li>
+                                    <li>Camarão</li>
+                                </ul>
+                                <br>
+                                <div><span>R$ 24,99</span></div>
+                            </div>                            
+                                <img src="Pizzaria Daniel/item2.png" alt="pizza2">
+                        </div>   
+                    </div>
+            </div>
+            <div class="item3">
+                    <h3>MANJERICÃO</h3>
+                    <div class="manjericao">
+                    <div><img src="Pizzaria Daniel/item3.png" alt="pizza3"></div>
+                    <div>
+                        <ul class="ingredientes3">
+                        <li>Massa integral</li>
+                        <li>Folhas de agrião</li>
+                        <li>Molho de tomate</li>
+                        <li>Camarão</li>
+                        </ul>
+                        <br>
+                        <span>R$ 24,99</span>
+                    </div>
+            </div>
+            <p>*Imagens Ilustrativas</p>
+        </section>       
+        <div class="inf">
+            <h3>Região de entrega</h3>
+            <img src="Pizzaria Daniel/mapa.png" alt="localização">
+            <h3>Conheça a pizzaria</h3>
+            <img class="pizzaiolo" src="Pizzaria Daniel/pizzaiolo.png" alt="pizzaiolo">
+            <h3>Como fazemos pizzas</h3>
+            <img src="Pizzaria Daniel/video.png" alt="video">
+        </div>
+        <div class="cardapio"></div>
+    </main>
+</body>
+
+</html>
